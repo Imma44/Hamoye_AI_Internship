@@ -49,7 +49,7 @@ The data consists of the following columns:
 """
 
 #Importing pandas profiling package
-!pip install https://github.com/pandas-profiling/pandas-profiling/archive/master.zip
+!pip install 'https://github.com/pandas-profiling/pandas-profiling/archive/master.zip'
 import pandas_profiling
 
 #Using Pandas Profiling Package
@@ -58,7 +58,8 @@ report = ProfileReport(df,title='Pandas Profiling Report'
     , html={"style": {"full_width": True}})
 report
 
-
+rep=report.to_file('electric_utilities_profiling.html')
+rep
 
 """# **Questions related to the dataset**
 
